@@ -1,8 +1,8 @@
 version: 2
 jobs:
-   build:
+   test:
      docker:
        - image: circleci/python:3.6.1
      steps:
        - checkout
-       - run: python demeaned_age.py
+       - run: python demean_age.py
