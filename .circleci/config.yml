@@ -5,4 +5,4 @@ jobs:
        - image: circleci/python:3.6.1
      steps:
        - checkout
-       - python demeaned_age.py
+       - run: python demeaned_age.py
