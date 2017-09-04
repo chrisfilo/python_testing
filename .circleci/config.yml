@@ -1,13 +1,10 @@
 version: 2
 jobs:
   build:
-    docker:
-      - image: circleci/python:3.6.1
-    steps:
-      - run: pip install numpy
-  test:
+    working_directory: ~/circulate
     docker:
       - image: circleci/python:3.6.1
     steps:
       - checkout
+      - run: pip install numpy
       - run: python demean_age.py
