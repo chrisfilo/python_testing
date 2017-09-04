@@ -1,5 +1,5 @@
 #!/bin/env python
-
+import sys
 import numpy as np
 
 age = np.loadtxt(sys.argv[1], skiprows=1, usecols=3)
