@@ -1,8 +1,9 @@
 #!/bin/env python
 import sys
 import numpy as np
+import pandas as pd
 
-age = np.loadtxt(sys.argv[1], skiprows=1, usecols=3)
+age = pd.read_csv(sys.argv[1], sep="\t").age
 
 mean_age = sum(age)/len(age)
 
